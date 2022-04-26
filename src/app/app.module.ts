@@ -4,14 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { TaskComponent } from './task/task.component';
 import { TaskDetailComponent } from './task/task-detail/task-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     TaskComponent,
     TaskDetailComponent
   ],
