@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
+Eine Website, die eine (TO-DO) Liste zeigt.
+
+Der Inhalt der Liste sind **Milestones** mit Deadlines.
+
+Man findet einen "+" Button zur Erstellung neuer Milestones. Wenn man einen Milestone erstellt, *muss* man eine Deadline ebenso setzen.
+
+Die Schriftfarbe verändert sich, je nachdem, wie viele Tage bis zur Deadline übrig sind:
+
+- #9B2226 (1 Tag übrig)
+- #AE2012 (1 Woche übrig)
+- #BB3E03 (2 Wochen übrig)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
