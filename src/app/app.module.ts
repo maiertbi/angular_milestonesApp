@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskComponent } from './task/task.component';
 import { TaskDetailComponent } from './task/task-detail/task-detail.component';
 import { TaskDoneComponent } from './task/task-done/task-done.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TaskDoneComponent } from './task/task-done/task-done.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

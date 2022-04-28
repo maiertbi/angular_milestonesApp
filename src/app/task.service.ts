@@ -20,9 +20,9 @@ export class TaskService {
     return tasksDone;
   }
 
-  // getTask(id: number): Observable<Task> {
-  //   const task = TASKS.find(t => t.id === id);
-  //   return of(task);
-  // } 
+  getTask(id: number): Observable<Task> {
+    const task = TASKS.find(t => t.id === id)!;
+    return of(task);
+  } 
 
 }
