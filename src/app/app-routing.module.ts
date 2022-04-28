@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'todo', component: TaskComponent},
   {path:'done', component: TaskDoneComponent},
   {path:'task/:id', component: TaskDetailComponent}
-  //  TODO: path for new Task 
+  //  TODO: path for new Task (NEW component missing)
 ];
 
 @NgModule({

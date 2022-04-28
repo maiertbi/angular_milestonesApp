@@ -30,5 +30,4 @@ export class TaskDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
 }
