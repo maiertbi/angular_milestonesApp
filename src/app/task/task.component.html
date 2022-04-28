@@ -1,1 +1,10 @@
-<p>task works!</p>
+<h2>My Tasks</h2>
+<ul>
+    <li *ngFor="let task of tasks">
+        <a>    <!-- for routerLink use later  -->
+            <p>{{ task.name }}</p>
+            <p>{{ task.deadline }}</p>
+        </a>
+    </li>
+</ul>
+
