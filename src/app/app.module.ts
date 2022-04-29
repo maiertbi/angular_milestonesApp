@@ -8,13 +8,15 @@ import { TaskComponent } from './task/task.component';
 import { TaskDetailComponent } from './task/task-detail/task-detail.component';
 import { TaskDoneComponent } from './task/task-done/task-done.component';
 import { FormsModule } from '@angular/forms';
+import { TaskNewComponent } from './task/task-new/task-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskComponent,
     TaskDetailComponent,
-    TaskDoneComponent
+    TaskDoneComponent,
+    TaskNewComponent
   ],
   imports: [
     BrowserModule,

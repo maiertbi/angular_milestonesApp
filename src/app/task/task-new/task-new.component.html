@@ -1,0 +1,12 @@
+<div>
+    <h2>Add a new Task:</h2>
+    <p>id: {{ newID }}</p>
+    <div>
+        <label for="task-name">Task name: </label>
+        <input id="task-name" [(ngModel)]="taskName" type="text" placeholder="Task name"/>
+        <!--  TODO: Date input -->
+    </div>
+
+    <button type="button" (click)="createNewTask()">Create new Task!</button>
+    <button type="button" (click)="goBack()">go back</button>
+</div>
