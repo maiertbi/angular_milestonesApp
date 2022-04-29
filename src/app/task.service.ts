@@ -25,4 +25,9 @@ export class TaskService {
     return of(task);
   } 
 
+  getLastTask(): Observable<Task> {
+    const task = TASKS[TASKS.length - 1];
+    return of(task);
+  }
+
 }

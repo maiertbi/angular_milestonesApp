@@ -14,7 +14,6 @@ export class TaskNewComponent implements OnInit {
 
   @Input() taskName?: string;
 
-  newTask = { id: this.newID, isDone: false, name: this.taskName, deadline: new Date("2022-07-11")};
 
   constructor(
     private route: ActivatedRoute,
@@ -25,8 +24,11 @@ export class TaskNewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createNewTask(): void {
-    // TASKS.push(this.newTask);
+  createNewTask(taskName: string): void {
+    let newTask = { id: this.newID, isDone: false, name: taskName, deadline: new Date("2022-07-11")};
+
+    TASKS.push(newTask);
+    this.location.back();
   }
 
   goBack(): void {
