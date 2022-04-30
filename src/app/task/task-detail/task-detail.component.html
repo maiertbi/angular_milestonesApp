@@ -1,6 +1,11 @@
 <div *ngIf="task">
     <h2>{{task.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{task.id}}</div>
+    <div>
+        <span>id: </span>{{task.id}}
+    </div>
+    <div>
+        <input type="checkbox" id="isDoneChecker" name="isDoneCheckbox" [(ngModel)]="task.isDone" [ngModelOptions]="{standalone: true}"/>
+    </div>
     <div>
         <label for="task-name">Task name: </label>
         <input id="task-name" [(ngModel)]="task.name" placeholder="Task name" />
