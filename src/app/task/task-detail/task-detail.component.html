@@ -4,12 +4,15 @@
         <span>id: </span>{{task.id}}
     </div>
     <div>
-        <input type="checkbox" id="isDoneChecker" name="isDoneCheckbox" [(ngModel)]="task.isDone" [ngModelOptions]="{standalone: true}"/>
+        <input type="checkbox" id="isDoneChecker" name="isDoneCheckbox" [(ngModel)]="task.isDone" [ngModelOptions]="{standalone: true}" />
     </div>
     <div>
         <label for="task-name">Task name: </label>
-        <input id="task-name" [(ngModel)]="task.name" placeholder="Task name" />
+        <input [(ngModel)]="task.name" placeholder="Task name" />
     </div>
-    <!--  TODO: Date input -->
+    <div>
+        <ngx-datepicker [(ngModel)]="task.deadline" [options]="options"></ngx-datepicker>
+    </div>
+
     <button type="button" (click)="goBack()">go back</button>
 </div>

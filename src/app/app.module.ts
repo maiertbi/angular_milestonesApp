@@ -9,6 +9,9 @@ import { TaskDetailComponent } from './task/task-detail/task-detail.component';
 import { TaskDoneComponent } from './task/task-done/task-done.component';
 import { FormsModule } from '@angular/forms';
 import { TaskNewComponent } from './task/task-new/task-new.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { DatepickerModule } from 'ng2-datepicker';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { TaskNewComponent } from './task/task-new/task-new.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    DatepickerModule,
     BrowserAnimationsModule
   ],
   providers: [],

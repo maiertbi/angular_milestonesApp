@@ -3,7 +3,7 @@
     <li *ngFor="let task of tasks">
         <a routerLink="/task/{{task.id}}">
             <p>
-                {{ task.name }} {{ task.deadline.getDate() }} / {{ task.deadline.getMonth() }} / {{ task.deadline.getFullYear() }}
+                {{ task.name }} {{ task.deadline.getDate() }} / {{ task.deadline.getMonth() + 1 }} / {{ task.deadline.getFullYear() }}
             </p>
         </a>
     </li>

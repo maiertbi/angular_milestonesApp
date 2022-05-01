@@ -3,8 +3,10 @@
     <p>id: {{ newID }}</p>
     <div>
         <label for="task-name">Task name: </label>
-        <input id="task-name" #taskName type="text" placeholder="Task name"/>
-        <!--  TODO: Date input -->
+        <input id="task-name" #taskName type="text" placeholder="Task name" value="Task #{{ newID }}"/>
+    </div>
+    <div>
+        <ngx-datepicker [(ngModel)]="taskDeadline" [options]="options"></ngx-datepicker>
     </div>
 
     <button type="button" (click)="createNewTask(taskName.value)">Create new Task!</button>
