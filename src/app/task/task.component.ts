@@ -20,4 +20,19 @@ export class TaskComponent implements OnInit {
     this.taskService.getTasks()
       .subscribe(tasks => this.tasks = tasks);
   }
+
+  daysLeft(task: Task): number {
+    const today = (new Date());
+    const dead = task.deadline;
+
+    if (dead.getTime() <= today.getTime()) { // has to be done because diff is set Math.abs()
+      console.log(task.id + " - one day left")
+      return 1;
+    }
+    
+    let diffDays = Math.ceil(Math.abs(dead.getTime() - today.getTime()) / (1000 * 3600 * 24)); 
+    
+    console.log("curr id: " + task.id + ", today: " + today.getDate() + "/" + today.getMonth() + ", dead: " + dead.getDate() + "/" + dead.getMonth() + ", diff Days: " + diffDays);
+    return diffDays;
+  }
 }

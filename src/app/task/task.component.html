@@ -2,11 +2,11 @@
 <ul>
     <li *ngFor="let task of tasks">
         <a routerLink="/task/{{task.id}}">
-            <p id="task{{task.id}}">
+            <p id="task{{task.id}}" [ngClass]="daysLeft(task) > 14 ? 'twoWeeksLeft' : (daysLeft(task) > 7) ? 'oneWeekLeft' : 'oneDayLeft'">
                 {{ task.name }} {{ task.deadline.getDate() }} / {{ task.deadline.getMonth() + 1 }} / {{ task.deadline.getFullYear() }}
             </p>
         </a>
     </li>
 </ul>
-<!--  TODO: method which changes the background-color of those objects -->
+
 
