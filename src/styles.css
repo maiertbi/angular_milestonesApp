@@ -5,6 +5,8 @@ body {
   margin-top: 12em;
   margin-right: 45em;
   margin-left: 45em;
+  min-width: 40em;
+  max-width: 40em;
 }
 
 body, input[type="text"], button {
